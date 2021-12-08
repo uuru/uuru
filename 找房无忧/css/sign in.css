@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-size: 10px;
+    background-color:#F5F5F5;
+}
+header{
+    border-bottom: 1px solid #ff8A00;
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    background-color: #ff8A00;
+}
+.left{
+    background: url(../image/index/logo.jpg) no-repeat center;
+    background-size: cover;
+    width: 15rem;
+    height: 100%;
+}
+.right{
+    display: flex;
+    width: 10rem;
+    height: 100%;
+   
+}
+.right_a{
+    width: 5rem;
+    height: 100%;
+    background: url(../image/index/my.jpg) no-repeat center;
+   background-size: 3rem 3.5rem;
+}
+.right_b{
+    width: 5rem;
+    height: 100%;
+    background: url(../image/index/xiazai.jpg) no-repeat center;
+    background-size: 3rem 3.5rem;
+}
+
+/* 主要内容 */
+ ul{
+   display: flex;
+   align-items: center; 
+   flex-direction: column; 
+ }
+ .sy{
+     font-weight: 600;
+ }
+ li{
+     list-style: none;
+ }
+ ul li{
+     line-height: 4rem;
+     margin-top: .5rem;
+     width: 100%;
+     height:4rem;
+     background-color: white;
+ }
+ li:nth-child(1){
+     text-indent: 2rem;
+ }
+ #qh{
+     font-size: 1.5rem;
+     display: flex;
+     line-height: 4rem;
+     text-align: center;
+ }
+ #left{
+     width: 50%;
+     height: 4rem;
+     border-bottom: 1rem solid #F5F5F5;
+     color: #ff8A00;
+     border-bottom: 1rem solid #ff8A00;
+ }
+
+ #right{
+    width: 50%;
+    height: 4rem;
+    border-bottom: 1rem solid #F5F5F5;
+}
+.one{
+    font-size: 1.5rem;
+   text-indent: 2rem;
+    color: #999;
+}
+.denglu{
+    width: 90%;
+    height: 6rem;
+    background-color: #ff8A00;
+    color: white;
+    line-height: 6rem;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+.wangji{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    background-color: #F5F5F5;
+}
+.wangji span:nth-child(1){
+    color: #ff8A00;
+}
+#zuo{
+    display: block;
+    width: 100%;
+}
+#you{
+    display: none;
+    width: 100%;
+}
+#password{
+    text-indent:1em;
+     margin-right: 2rem;
+     line-height: 3rem;
+     margin-top: .4rem;
+     display: block;
+     float: right;
+     width: 9rem;
+     height: 3rem;
+     border: 1px solid;
+     font-size: 1.2rem;
+ }
+
+ 
+

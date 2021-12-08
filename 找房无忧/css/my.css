@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-size: 10px;
+    background-color: rgb(238, 228, 228);
+}
+/* 头部 */
+header{
+    width:100%;
+    height: 22rem;
+    background: url(../image/my/bg1.png)no-repeat center;
+    background-size:cover;
+}
+a{
+    text-decoration: none;
+}
+.top{
+    display: flex;
+    width: 10rem;
+    height: 5rem;
+   float: right;
+}
+.top a:nth-child(1){
+    margin-top: 1rem;
+    text-align: center;
+    padding-top:2.2rem ;
+    color: white;
+    font-size: 1.5rem;
+    background: url(../image/my/urse.png)no-repeat 1.5rem 0rem;
+    background-size:2rem 2rem;
+    flex: 5;
+}
+.top a:nth-child(2){
+    margin-top: 1rem;
+    text-align: center;
+    padding-top:2.2rem ;
+    color: white;
+    font-size: 1.5rem;
+    background: url(../image/my/down.png)no-repeat 1.5rem 0rem;
+    background-size:2rem 2rem;
+    flex: 5;
+
+}
+
+
+
+/* 主要的 */
+ul{
+    margin-top: 1rem;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ul li{
+    color: #999;
+    display: flex;
+    border-bottom: 1px solid #c4c2c2;
+    list-style: none;
+    width: 90%;
+    height:6rem;
+    background-color: white;
+}
+ul li:nth-child(1) div:nth-child(1){
+    flex: 1;
+    background: url(../image/my/icon1.png)no-repeat center;
+    background-size:2rem 2rem;
+    background-color: white;
+}
+ul li:nth-child(1) div:nth-child(2){
+    text-indent: .5rem;
+    font-size: 1.5rem;
+    line-height: 6rem;
+    flex: 8;
+    background-color:white;
+}
+ul li:nth-child(1) div:nth-child(3){
+    flex: 1;
+    background: url(../image/my/right.png) no-repeat center;
+    background-size: .8rem 1.8rem;
+    background-color: white;
+}
+
+ul li:nth-child(2) div:nth-child(1){
+    flex: 1;
+    background: url(../image/my/icon2.png)no-repeat center;
+    background-size:2rem 2rem;
+    background-color: white;
+}
+ul li:nth-child(2) div:nth-child(2){
+    text-indent: .5rem;
+    font-size: 1.5rem;
+    line-height: 6rem;
+    flex: 8;
+    background-color:white;
+}
+ul li:nth-child(2) div:nth-child(3){
+    flex: 1;
+    background: url(../image/my/right.png) no-repeat center;
+    background-size: .8rem 1.8rem;
+    background-color: white;
+}
+ul li:nth-child(3) div:nth-child(1){
+    flex: 1;
+    background: url(../image/my/icon3.png)no-repeat center;
+    background-size:2rem 2rem;
+    background-color: white;
+}
+ul li:nth-child(3) div:nth-child(2){
+    text-indent: .5rem;
+    font-size: 1.5rem;
+    line-height: 6rem;
+    flex: 8;
+    background-color:white;
+}
+ul li:nth-child(3) div:nth-child(3){
+    flex: 1;
+    background: url(../image/my/right.png) no-repeat center;
+    background-size: .8rem 1.8rem;
+    background-color: white;
+}
+ul li:nth-child(4) div:nth-child(1){
+    flex: 1;
+    background: url(../image/my/icon4.png)no-repeat center;
+    background-size:2rem 2rem;
+    background-color: white;
+}
+ul li:nth-child(4) div:nth-child(2){
+    text-indent: .5rem;
+    font-size: 1.5rem;
+    line-height: 6rem;
+    flex: 8;
+    background-color:white;
+}
+ul li:nth-child(4) div:nth-child(3){
+    flex: 1;
+    background: url(../image/my/right.png) no-repeat center;
+    background-size: .8rem 1.8rem;
+    background-color: white;
+}
+.touxiang{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 7rem;
+    width: 7rem;
+    height: 7rem;
+    background: url(../image/my/urse2.png) no-repeat center;
+    background-size: contain;
+}
+.ludeng{
+    width: 8rem;
+    height: 4rem;
+    border: 1px solid white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15rem;
+    text-align: center;
+    line-height: 4rem;
+    color: white;
+    font-size: 1.3rem;
+}
+
+
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/sign in.css">
+    <script src=""></script>
+</head>
+
+<body>
+    <header>
+        <div class="left"></div>
+        <div class="right">
+            <div class="right_a"></div>
+            <div class="right_b"></div>
+        </div>
+    </header>
+
+    <main>
+        <ul>
+            <li><span class="sy">首页</span>&nbsp;>&nbsp;我的&nbsp;>&nbsp;登录</li>
+            <li id="qh">
+                <div id="left">普通登录</div>
+                <div id="right">验证码快捷登录</div>
+            </li>
+            <div id="zuo">
+                <li class="one"><span>请输入手机号码</span></li>
+                <li class="one">请输入密码</li>
+            </div>
+            <div id="you">
+                <li class="one"><span>请输入手机号码</span>  <span id="password">发送验证码</span></li>
+                <li class="one">请输入短信中的验证码</li>
+            </div>
+           
+
+
+            <li class="denglu">立即登录</li>
+            <li class="wangji">
+                <span>立即注册</span>
+                <span>忘记密码</span>
+            </li>
+        </ul>
+    </main>
+</body>
+ <script>
+     var right=document.getElementById('right');
+     var left=document.getElementById('left');
+     var zuo=document.getElementById('zuo');
+     var you=document.getElementById('you');
+     var queren=document.getElementsByClassName('denglu')[0];
+     right.onclick=function(){
+        zuo.style.display='none';
+        you.style.display='block';
+        right.style.color=' #ff8A00';
+        left.style.color='black';
+        queren.innerHTML='验证并登录';
+        right.style.borderBottomColor='#ff8A00';
+        left.style.borderBottomColor='#F5F5F5';
+     }
+     left.onclick=function(){
+         you.style.display='none';
+         zuo.style.display='block';
+         left.style.color=' #ff8A00';
+         right.style.color='black';
+         queren.innerHTML='立即登录';
+         left.style.borderBottomColor='#ff8A00';
+         right.style.borderBottomColor='#F5F5F5';
+     }
+
+    //  计时器
+     var password = document.getElementById('password');
+    var timer;
+    num = 60;
+   password.onclick = function () {
+    clearInterval(timer);
+    timer=setInterval(function () {
+        num--;
+        password.innerHTML = '('+num+')' + '秒后重发';
+        if (num<0){
+            password.innerHTML =  '重新发送';
+            clearInterval(timer);
+        }
+    }, 1000)
+}
+ </script>
+
+</html>

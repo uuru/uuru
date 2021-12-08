@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-size: 10px;
+    background-color: rgb(238, 228, 228);
+}
+header{
+    border-bottom: 1px solid #ff8A00;
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    background-color: #ff8A00;
+}
+.left{
+    background: url(../image/index/logo.jpg) no-repeat center;
+    background-size: cover;
+    width: 15rem;
+    height: 100%;
+}
+.right{
+    display: flex;
+    width: 10rem;
+    height: 100%;
+   
+}
+.right_a{
+    width: 5rem;
+    height: 100%;
+    background: url(../image/index/my.jpg) no-repeat center;
+   background-size: 3rem 3.5rem;
+}
+.right_b{
+    width: 5rem;
+    height: 100%;
+    background: url(../image/index/xiazai.jpg) no-repeat center;
+    background-size: 3rem 3.5rem;
+}
+
+
+
+
+
+
+.rmfy{
+    line-height: 1.8rem;
+    width: 100%;
+    height:5rem;
+    background-color:white;
+    border-bottom: 1px solid #999;
+    font-size: 1.7rem;
+    
+}
+.shouye{
+    font-weight: 600;
+    margin-left: 1rem;
+}
+.tuijie{
+    width: 100%;
+    height: 82rem;
+    background-color: #F5F5F5;
+}
+.ul_tuijie{
+    
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.ul_tuijie li{
+   padding-top: 4rem;
+    display: flex;
+    width: 90%;
+    height: 20rem;
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #ff8A00;
+}
+.tuijie_diva{
+    flex: 2;
+    background-color: slateblue;
+    background: url(../image/my/img1.png) no-repeat 0rem 1rem;
+    background-size: contain;
+}
+.tuijie_divaa{
+    flex: 2;
+    background-color: slateblue;
+    background: url(../image/my/img2.png) no-repeat  0rem 1rem;
+    background-size: contain;
+}
+.tuijie_divaaa{
+    flex: 2;
+    background-color: slateblue;
+    background: url(../image/my/img3.png) no-repeat 0rem 1rem;
+    background-size: contain;
+}
+.tuijie_divaaaa{
+    flex: 2;
+    background-color: slateblue;
+    background: url(../image/my/img4.png) no-repeat 0rem 1rem;
+    background-size: contain;
+}
+
+.tuijie_divb{
+    flex: 4;
+    background-color: #F5F5F5;
+}
+.pa{
+    text-indent: 1em;
+}
+.pb{
+    
+    text-indent: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.pb span:nth-child(1){
+    font-size: 1.7rem;
+}
+.pb span:nth-child(2){
+    font-size: 1.7rem;
+    color: #ff8A00;
+}
+.pc{
+    text-indent: 1em;
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.pc span:nth-child(1){
+    font-size: 1.7rem;
+}
+.pc span:nth-child(2){
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #ff8A00;
+}
+.pd{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.5rem;
+}
+.pd span:nth-child(1){
+    text-align: center;
+    display: block;
+    width: 7rem;
+    font-size: 1.7rem;
+}
+ .pa span{
+     margin-left: -.5rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+

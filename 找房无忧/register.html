@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/register.css">
+    <script src=""></script>
+</head>
+
+<body>
+    <header>
+        <div class="left"></div>
+        <div class="right">
+            <div class="right_a"></div>
+            <div class="right_b"></div>
+        </div>
+    </header>
+    <main>
+        <ul>
+            <li class="qwer"><span class="souye">首页</span>&nbsp;>&nbsp;我的&nbsp;>&nbsp;注册</li>
+            <li>请输入手机号码 <span id="password">发送验证码</span></li>
+            <li>请输入短信中的验证码</li>
+            <li>请输入新密码</li>
+            <li class="queren">立即注册</li>
+        </ul>
+    </main>
+</body>
+<script>
+    var password = document.getElementById('password');
+   var timer;
+   num = 60;
+  password.onclick = function () {
+   clearInterval(timer);
+   timer=setInterval(function () {
+       num--;
+       password.innerHTML = '('+num+')' + '秒后重发';
+       if (num<0){
+           password.innerHTML =  '重新发送';
+           clearInterval(timer);
+       }
+   }, 1000)
+}
+</script>
+<script>
+    window.onblur = function () {
+    setRem();
+}
+function setRem() {
+    var ui_w = 700;
+    // 获取屏幕的宽度
+    var clientWidth = document.documentElement.clientWidth || document.body.clientWidth;
+    console.log(ui_w, clientWidth);
+    // 通过js动态改变html根节点字体大小
+    var html_ = document.getElementsByTagName('html')[0];
+    html_.style.fontSize = (clientWidth / ui_w) * 100 + '%';
+}
+// window.onresize 浏览器被重置大小执行事件
+window.onresize = setRem;
+
+
+</script>
+
+</html>

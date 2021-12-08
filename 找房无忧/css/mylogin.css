@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-size: 10px;
+    background-color: #f5f5f5;
+}
+/* 头部 */
+header{
+    border-bottom: 1px solid #ff8A00;
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    background-color: #ff8A00;
+}
+.left{
+    background: url(../image/index/logo.jpg) no-repeat center;
+    background-size: cover;
+    width: 15rem;
+    height: 100%;
+}
+.right{
+    display: flex;
+    width: 10rem;
+    height: 100%;
+   
+}
+.right_a{
+    width: 5rem;
+    height: 100%;
+    background: url(../image/index/my.jpg) no-repeat center;
+   background-size: 3rem 3.5rem;
+}
+.right_b{
+    width: 5rem;
+    height: 100%;
+    background: url(../image/index/xiazai.jpg) no-repeat center;
+    background-size: 3rem 3.5rem;
+}
+
+
+.nohap{
+    width:100%;
+    height: 22rem;
+    background: url(../image/my/bg2.png)no-repeat center;
+    background-size:cover;
+}
+a{
+    text-decoration: none;
+}
+.top{
+    display: flex;
+    width: 10rem;
+    height: 5rem;
+   float: right;
+}
+.top a:nth-child(1){
+    margin-top: 1rem;
+    text-align: center;
+    padding-top:2.2rem ;
+    color: white;
+    font-size: 1.5rem;
+    background: url(../image/my/urse.png)no-repeat 1.5rem 0rem;
+    background-size:2rem 2rem;
+    flex: 5;
+}
+.top a:nth-child(2){
+    margin-top: 1rem;
+    text-align: center;
+    padding-top:2.2rem ;
+    color: white;
+    font-size: 1.5rem;
+    background: url(../image/my/down.png)no-repeat 1.5rem 0rem;
+    background-size:2rem 2rem;
+    flex: 5;
+
+}
+
+.shouye{
+    font-weight: 600;
+}
+ /* 导航栏 */
+.daohang{
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    background-color: white;
+    font-size: 1.5rem;
+    text-indent: 2rem;
+}
+
+
+
+/* 主要的 */
+ul{
+    margin-top: 1rem;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ul li{
+    color: #999;
+    display: flex;
+    border-bottom: 1px solid rgb(216, 213, 213);
+    list-style: none;
+    width: 90%;
+    height:6rem;
+    background-color: white;
+}
+ul li:nth-child(1) div:nth-child(2){
+    text-indent: .5rem;
+    font-size: 1.5rem;
+    line-height: 6rem;
+    flex: 8;
+    background-color:white;
+}
+ul li:nth-child(1) div:nth-child(3){
+    flex: 1;
+    background: url(../image/my/right.png) no-repeat center;
+    background-size: .8rem 1.8rem;
+    background-color: white;
+}
+ul li:nth-child(2) div:nth-child(2){
+    border-bottom: 1px solid rgb(216, 213, 213);
+    text-indent: .5rem;
+    font-size: 1.5rem;
+    line-height: 6rem;
+    flex: 8;
+    background-color:white;
+}
+ul li:nth-child(2) div:nth-child(3){
+    border-bottom: 1px solid rgb(216, 213, 213);
+    flex: 1;
+    background: url(../image/my/right.png) no-repeat center;
+    background-size: .8rem 1.8rem;
+    background-color: white;
+}
+ul li:nth-child(3) div:nth-child(2){
+    text-indent: .5rem;
+    font-size: 1.5rem;
+    line-height: 6rem;
+    flex: 8;
+    background-color:white;
+}
+ul li:nth-child(3) div:nth-child(3){
+    flex: 1;
+    background: url(../image/my/right.png) no-repeat center;
+    background-size: .8rem 1.8rem;
+    background-color: white;
+}
+ul li:nth-child(4) div:nth-child(2){
+    text-indent: .5rem;
+    font-size: 1.5rem;
+    line-height: 6rem;
+    flex: 8;
+    background-color:white;
+}
+ul li:nth-child(4) div:nth-child(3){
+    flex: 1;
+    background: url(../image/my/right.png) no-repeat center;
+    background-size: .8rem 1.8rem;
+    background-color: white;
+}
+.touxiang{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 7rem;
+    width: 7rem;
+    height: 7rem;
+    background: url(../image/my/urse2.png) no-repeat center;
+    background-size: contain;
+}
+.ludeng{
+    width: 20rem;
+    height: 4rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15rem;
+    text-align: center;
+    line-height: 4rem;
+    color: white;
+    font-size: 1.3rem;
+}
+.gtr{
+    width:90%;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    background-color: white;
+    color: #ff8A00;
+    margin-left: 2rem;
+    margin-top: 3rem;
+    border: 1px solid rgb(204, 203, 203);
+}
+

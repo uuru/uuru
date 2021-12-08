@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-size: 10px;
+    background-color: rgb(238, 228, 228);
+}
+
+
+/* 头部导航 */
+header{
+    border-bottom: 1px solid #ff8A00;
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    background-color: #ff8A00;
+}
+.left{
+    background: url(../image/index/logo.jpg) no-repeat center;
+    background-size: cover;
+    width: 15rem;
+    height: 100%;
+}
+.right{
+    display: flex;
+    width: 10rem;
+    height: 100%;
+   
+}
+.right_a{
+    width: 5rem;
+    height: 100%;
+    background: url(../image/index/my.jpg) no-repeat center;
+   background-size: 3rem 3.5rem;
+}
+.right_b{
+    width: 5rem;
+    height: 100%;
+    background: url(../image/index/xiazai.jpg) no-repeat center;
+    background-size: 3rem 3.5rem;
+}
+
+
+
+
+
+
+ul{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+
+ul li{
+    color: #999;
+    text-indent: 2rem;
+    line-height: 4rem;
+    list-style: none;
+    width: 100%;
+    height: 4rem;
+    background-color: white;
+    margin-top: .2rem;
+}
+
+.qwer{
+    color: black;
+}
+.queren{
+    
+    margin-top: 1.5rem;
+    width: 90%;
+    height: 6rem;
+    background-color: #ff8A00;
+    line-height: 6rem;
+    text-align: center;
+    color: white;
+    font-size: 2.3rem;
+}
+.souye{
+    font-weight: 600;
+}
+#password{
+   text-indent:.5em;
+    margin-right: 2rem;
+    line-height: 3rem;
+    margin-top: .4rem;
+    display: block;
+    float: right;
+    width: 9rem;
+    height: 3rem;
+    border: 1px solid;
+    font-size: 1.3rem;
+}

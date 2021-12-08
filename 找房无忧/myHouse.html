@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/myHouse.css">
+    <script src=""></script>
+</head>
+
+<body>
+    <header>
+        <div class="left"></div>
+        <div class="right">
+            <div class="right_a"></div>
+            <div class="right_b"></div>
+        </div>
+    </header>
+    <div class="rmfy">
+        <br>
+        <span class="aaaa">&nbsp;<span class="shouye">首页</span>&nbsp;>&nbsp;我的&nbsp;>&nbsp;我关注的小区</span>
+    </div>
+
+    <div class="tuijie">
+        <ul class="ul_tuijie">
+            <li>
+                <div class="tuijie_diva"></div>
+                <div class="tuijie_divb">
+                    <p class="pa"><span>&nbsp;辉煌国际</span></p>
+                    <p class="pb"><span>昌平区-回龙观</span></p>
+                    <p class="pc"><span>2007年建成</span><span>37050元/平</span></p>
+                    <p class="pd"><span>板塔结构</span></p>
+                </div>
+            </li>
+
+
+      <li>
+              <div class="tuijie_divaa"></div>
+              <div class="tuijie_divb">
+                <p class="pa"><span>&nbsp;万寿园</span></p>
+                <p class="pb"><span>昌平区-回龙观</span></p>
+                <p class="pc"><span>2007年建成</span><span>56447元/平</span></p>
+                <p class="pd"><span>板塔结构</span></p>
+              </div>
+          </li>
+      </li>
+
+
+
+            <li>
+              <div class="tuijie_divaaa"></div>
+              <div class="tuijie_divb">
+                <p class="pa"><span>&nbsp;红莲南里5号</span></p>
+                <p class="pb"><span>昌平区-回龙观</span></p>
+                <p class="pc"><span>2007年建成</span><span>89776元/平</span></p>
+                <p class="pd"><span>板塔结构</span></p>
+              </div>
+          </li>
+
+
+          <li>
+            <div class="tuijie_divaaaa"></div>
+            <div class="tuijie_divb">
+                <p class="pa"><span>&nbsp;万寿西街16号</span></p>
+                    <p class="pb"><span>昌平区-回龙观</span></p>
+                    <p class="pc"><span>2007年建成</span><span>90778元/平</span></p>
+                    <p class="pd"><span>板塔结构</span></p>
+            </div>
+        </li>
+
+        </ul>
+
+    </div>
+
+</body>
+<script>
+    window.onblur = function () {
+    setRem();
+}
+function setRem() {
+    var ui_w = 700;
+    // 获取屏幕的宽度
+    var clientWidth = document.documentElement.clientWidth || document.body.clientWidth;
+    console.log(ui_w, clientWidth);
+    // 通过js动态改变html根节点字体大小
+    var html_ = document.getElementsByTagName('html')[0];
+    html_.style.fontSize = (clientWidth / ui_w) * 100 + '%';
+}
+// window.onresize 浏览器被重置大小执行事件
+window.onresize = setRem;
+
+
+</script>
+
+
+
+</html>
