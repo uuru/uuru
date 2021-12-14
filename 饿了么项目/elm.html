@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/elm.css">
+
+</head>
+<body>
+<iframe  src="./index1.html" class="Module"></iframe>
+<iframe src="./liebiao.html" class="Module"></iframe>
+<iframe src="./dingdan.html" class="Module"></iframe>
+<iframe src="./user.html" class="Module"></iframe>
+
+    
+<div class="footer">
+    <div class="f-item">
+        <img src="./img/ft1.png" alt="">
+        <p>首页</p>
+    </div>
+    <div class="f-item">
+        <img src="./img/ft02.png" alt="">
+        <p>发现</p>
+    </div>
+    <div class="f-item">
+        <img src="./img/ft03.png" alt="">
+        <p>订单</p>
+    </div>
+    <div class="f-item">
+        <img src="./img/ft04.png" alt="">
+        <p>我的</p>
+    </div>1
+</div>
+</body>
+<script src="./lib/jquery-2.0.0.min.js"></script>
+<script>
+    console.log($(".f-item>img"));
+    $(".f-item").click(function(){
+        var index=$(this).index();
+        console.log(index);
+        
+        $(".Module").eq(index).show().siblings(".Module").hide();
+        // $(this).attr("src","./img/ft1.png");
+        
+    })
+    $(".f-item>img").eq(0).click(function(){
+         $(this).attr("src","./img/ft1.png");
+    })
+    $(".f-item>img").eq(1).click(function(){
+         $(this).attr("src","./img/ft2.png");
+
+    })
+    $(".f-item>img").eq(2).click(function(){
+         $(this).attr("src","./img/ft3.png");
+         
+    })
+    $(".f-item>img").eq(3).click(function(){
+         $(this).attr("src","./img/ft4.png");
+         
+    })
+
+  
+    // 切换
+    // 点击user卡跳转到登录注册界面
+    $(".user").click(function(){
+    }) 
+</script>
+</html>

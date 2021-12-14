@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // 同步：按部就班的完成，代码从上到下
+        // //异步：同时执行 分身执行
+        // var palceObject=()=>{
+        //     console.log('种子');
+        // }
+        // var Seeds =()=>{
+        //     console.log("小苗");
+        // }
+        // var Flower=()=>{
+        //     console.log("大花");
+        // }
+        // 同步
+        // palceObject();
+        // setTimeout(palceObject,500)
+        // setTimeout(Seeds,3000)
+        // setTimeout(Flower,1000)
+       
+        // // Flower();
+        // console.log(999);
+        // new Promise(()=>{
+        //     // palceObject
+        //     console.log('1233333')
+        // })
+         // palceObject.then((res)=>{
+        //     console.log(res)
+        //     return marry
+        // }).then(
+        //     function (res){
+        //         console.log("success")
+        //     }
+        // ).catch(
+        //     function(err){
+        //         console.log('err')
+        //     }
+        // )
+        // var palceObject=new Promise((resolve,reject)=>{
+        //     setTimeout(()=>{
+        //         resolve('种子')
+        //     },1000)
+        // })
+        // var Seeds=new Promise((resolve,reject)=>{
+        //     setTimeout(()=>{
+        //         resolve('小苗')
+        //     },2000)
+        // })
+        // var Flowers=new Promise((resolve,reject)=>{
+        //     setTimeout(()=>{
+        //         resolve('大花花')
+        //     },3000)
+        // })
+       
+       
+        // 3.根据需求调用Promise对象
+        // palceObject.then((res)=>{
+        //     console.log(res)
+        //     // 返回下一个
+        //     return Seeds
+        // }).then((res)=>{
+        //     console.log(res)
+        //     return Flowers
+        // }).then((res)=>{
+        //     console.log(res)
+        // })
+        async function aaa(){
+            return 'async异步函数'
+        }
+        console.log()
+        var bbb=new Promise(resolve=>resolve('async函数'));
+        // 如果一个函数返回了一个promise对象，那么即使是不使用async关键词，次函数也是一个异步函数
+        // 是不是异步函数关键是返回的是不是promise对象
+        console.log(bbb)
+        var aaa=async()=>'async异步函数'
+        console.log(aaa())
+        // 等价于
+        var bbb=new Promise(resolve=>resolve('aa'))
+        console.log(bbb)
+
+
+    </script>
+
+</body>
+</html>

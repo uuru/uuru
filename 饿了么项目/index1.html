@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./lib/jquery-2.0.0.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="./js/food.js"></script>
+    <script src="./js/search.js"></script>
+</head>
+<body>
+    <div class="h_part1">
+        <img src="./img/dingwei.png" alt="">
+        <h2>腾讯计算机有限公司</h2>
+    </div>
+    <div class="h_part2">
+        <div class="ui-widget">
+            <input type="text" id="foods" placeholder="搜索饿了么商家、商品名称">
+        </div>
+    </div>
+    <div class="listbox">
+        <div class="list" id="list"> 
+        </div>
+    </div>
+    <div class="taocan">
+        <p>品质套餐</p>
+        <p>搭配齐全吃得好</p>
+        <a href="">立即抢购</a>
+        <img src="./img/taocan.png" alt="">
+    </div>
+    <div class="tuijian_title">
+        <p>推荐商家</p>
+    </div>
+    <div class="tab">
+        <div>综合排序</div>
+        <div class="zuijin">距离最近</div>
+        <div>销量最高</div>
+        <div>筛选</div>
+    </div>
+
+    <div class="tuijian" id="tuijian">
+        <div id="product">
+        </div>
+    </div>
+    <div class="tab_cover">
+        <ul class="paixu">
+        </ul>
+        <div class="shaixuan">
+            <table id="shaixuan">
+            </table>
+            <div class="s_btn"><button class="shaixuan_clear">清空</button><button class="shaixuan_submit">确定</button></div>
+        </div>
+    </div>
+   
+    <!--一级目录 滑动出来的地址页面 -->
+    <div class="shouhuo">
+        <!-- 定位的头部 -->
+        <div class="dw_header">
+            <a class="dw_back">></a>
+            <span>请选择收获地址</span>
+            <span id="addBtn">新增地址</span>
+        </div>
+        <div class="dw_search">
+            
+            <input type="text" placeholder="请输入地址" id="tags">
+            <select name="" id="">
+                <option value="">广西省</option>
+                <option value=""> 北京省</option> 
+                <option value="">山西省</option> 
+                <option value="">河南省</option> 
+                <option value="">上海省</option>
+                <option value="">黑龙江省</option>
+                <option value="">江苏省</option>
+                <option value="">浙江省</option>
+                <option value="">安徽省</option>
+                <option value="">福建省</option>
+            </select>
+        </div>
+        <div class="tip">当前地址</div>
+        <div class="dingwei">
+            <span>腾讯计算机有限公司</span>
+            <span>重新定位</span>
+            <img src="./img/dizhi.png" alt="">
+        </div>
+        <div class="tip">收货地址</div>
+        <!-- 详细地址 -->
+        <div id="dz_detail">
+            <div class="dz_detail">
+                <span>李华</span>
+                <span>女生</span>
+                <span>19177190000</span>
+                <p>腾讯计算机有限公司</p>
+            </div>
+            <div class="dz_detail">
+                <span>小明</span>
+                <span>男生</span>
+                <span>1986666660</span>
+                <p>清华大学</p>
+            </div>
+        </div>  
+    </div>
+    <!-- 二级目录 添加地址 -->
+    <div class="add">
+        <div class="add_header">
+            <div class="add_back"><</div>
+            <span>添加地址</span>
+        </div>
+        <div class="add_main">
+            <label for="">联系人</label><input type="text" placeholder="姓名" class="Aname"><br>
+            <label for="">性别&nbsp;&nbsp;&nbsp;</label><input type="text" placeholder="性别" class="Asex"><br>
+            <label for="">电话&nbsp;&nbsp;&nbsp;</label><input type="text" class="Atel" placeholder="手机号码"><br>
+            <label for="">地址&nbsp;&nbsp;&nbsp;</label><input type="text" class="Adizhi" placeholder="小区/写字楼/学校等"><br>
+            <label for="">门牌号</label><input type="text" placeholder="10号5层501室222" class="Amenpai"><br>
+            <label for="">标签&nbsp;&nbsp;&nbsp;</label><input type="button" value="家"><input type="button" value="公司"><input type="button" value="学校">
+        </div>
+        <div class="queding">确定</div>
+    </div>
+<script>
+    var a=$.ajax({
+        type:"get",
+        url:"./js/index.json",
+        async:false,
+        success:function(response){
+            $.each(response.label,function(i,e){
+                $("<div class='list-item'></div>").html('<img src="'+e.src1+'" alt=""><p>'+e.p1+'</p> <img src="'+e.src2+'" alt=""><p>'+e.p2+'</p> ').appendTo($("#list"));
+            });
+           
+            $.each(response.sp,function(i,e){
+                $("<div class='product'  onclick='go(this)' hashId="+e.hashId+"></div>").html(' <div class="pro_l"><img src="'+e.src1+'" alt=""></div><div class="pro_r"><span>品牌</span><span>'+e.title+'</span><div class="pj"><div class="xingxing"><img src="./img/xingxing.png" alt=""><img src="./img/xingxing.png" alt=""><img src="./img/xingxing.png" alt=""><img src="./img/xingxing.png" alt=""><img src="./img/xingxing.png" alt=""></div><span>'+e.pingjia+'</span><span>月售'+e.yueshou+'单</span></div><div class="juli"><div><span>￥15元起送</span><span>|</span><span>远距离配送￥1.5</span></div><div><a href="./liebiao.html">'+e.juli+'km</a><a href="./liebiao.html">|</a><a href="./liebiao.html">'+e.shijian+'分钟</a></div></div><p class="lx">'+e.leixing+'</p><p class="jian">'+e.biaoqian1+'</p><p class="pei">'+e.biaoqian2+'</p></div>').appendTo($("#product"));
+            });
+            $.each(response.Shaixuan,function(i,e){
+                $("<tr></tr>").html('<td>'+e.one+'</td><td>'+e.two+'</td><td>'+e.three+'</td>').appendTo("#shaixuan");
+            });
+            $.each(response.paixu,function(i,e){
+                $("<li></li>").html(e.text).appendTo(".paixu");
+            });
+
+            // $(".zuijin").click(function(){
+                
+            // })
+        },
+        error:function(){
+            console.log("出错了！");
+        }
+    })
+    function go(t){
+        window.location.href="跳转的页面.html?hashId="+$(t).attr("hashId");   
+    }
+   
+    // 点击综合排序
+    $(".tab div").eq(0).click(function(){
+        $(".shaixuan").hide();
+        $(".tab").css({"position":"fixed","left":"0rem","top":"5.2rem","border-bottom":"1px solid #eee"});
+        $(".h_part2").css("position","fixed");
+        $(".tab_cover").show();
+        $(".paixu").slideDown(1000);
+    })
+    // 点击筛选 总合排序消失
+    $(".tab div").eq(3).click(function(){
+        $(".paixu").hide();
+        $(".tab").css({"position":"fixed","left":"0rem","top":"5.2rem","border-bottom":"1px solid #eee"});
+        $(".h_part2").css("position","fixed");
+        $(".tab_cover").show();
+        $(".shaixuan").slideDown(500);
+    })
+    // 点击排序页面 弹出来的都消失
+    $(".paixu").click(function(){
+        $(".tab").css({"position":"sticky","left":"0rem","top":"5.2rem","border-bottom":"none"});
+        $(".h_part2").css("position","sticky");
+        $(".tab_cover").hide(); 
+        $(".paixu").hide();
+        $(".shaixuan").hide();
+    })
+    // 点击筛选中的按钮 才会弹出来的都消失
+    $(".shaixuan_submit").click(function(){
+        $(".tab").css({"position":"sticky","left":"0rem","top":"5.2rem","border-bottom":"none"});
+        $(".h_part2").css("position","sticky");
+        $(".tab_cover").hide(); 
+        $(".paixu").hide();
+        $(".shaixuan").hide();
+    })
+    // 点击tab文字变蓝
+    $(".tab div").click(function(){
+        $(this).css("color","#008eff").siblings().css("color","#000");
+    })
+    // 筛选中 点击文字背景变蓝
+    $("td").click(function(){      
+        // $(this).css({"background":"#edf5ff","color":"#3190e8"});
+        if($(this).hasClass("tdColor")){
+            $(this).removeClass("tdColor");
+        }else{
+            $(this).addClass("tdColor");
+        }   
+    })
+    // 点击清空 全部变回原样
+    $(".shaixuan_clear").click(function(){
+       $("td").each(function(i,e){
+            if($(this).hasClass("tdColor")){
+                $(this).removeClass("tdColor");
+            }
+       })
+    })
+    // =================一级菜单============
+    // 头部点击滑动事件
+     $(".h_part1").click(function(){
+        $(".shouhuo").animate({"left":"0px"},400)
+        console.log("111111");
+     })
+    //定位滑出
+     $(".dw_back").click(function(){
+         $(".shouhuo").animate({"left":"100%"},400)
+     })
+    //================== 二级菜单====================
+     // 头部点击滑动事件
+     $("#addBtn").click(function(){
+        $(".add").animate({"left":"0px"},400)
+    })
+    // // 定位滑出
+    // $(".add_back").click(function(){
+    //     $(".add").animate({"left":"100%"},400)
+    // })
+   
+    // 在中写入数据
+//   //前置追加
+    
+    $(".queding").click(function(){
+        
+    if($(".Aname").val()!='' && $(".Asex").val()!='' && $(".Atel").val()!='' && $(".Adizhi").val()!=''){
+        $("<div class='dz_detail'></div>").html('<span>'+$(".Aname").val()+'</span><span>'+$(".Asex").val()+'</span><span>'+$(".Atel").val()+'</span><p>'+$(".Adizhi").val()+'</p>').appendTo($("#dz_detail"));
+        $(".add").animate({"left":"100%"},400)
+    }else{
+        alert("输入不能为空")
+    }
+    })
+</script>
+</body>
+</html>

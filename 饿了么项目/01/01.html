@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Person=function(age,name,sex){
+            this.age=age
+            this.name=name
+            this.sex=sex
+        }
+        var zhang=new Person(18,'张三','男')
+        console.log(zhang.name)
+        // es6面向对象
+        class Person2{
+            //构造方法
+            constructor(age,name,sex){
+                this.age=age
+                this.name=name
+                this.sex=sex
+            }
+            operation(){
+                console.log(this.name+'听课')
+            }
+            // this.age=age
+        }
+        var li=new Person2(20,'李四','女')
+        console.log(li.name)
+        li.operation()
+        Person2.prototype.height=100;
+        var wang=new Person2(28,'王五','未知');
+        console.log(wang .height)
+        // function 
+
+
+
+        class ColorPrint extends Print{
+            constructor(x,y,color){
+                super(x,y)
+                this.color=color
+            }
+            toString
+        }
+        var a=new Print(12,50)
+    </script>
+</body>
+</html>

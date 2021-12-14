@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 10px;
+            box-sizing: border-box;
+        }
+        .header{
+            position: relative;
+            width: 100%;
+            height: 4rem;
+            color: #fff;
+            line-height: 4rem;
+            font-size: 1.6rem;
+            text-align: center;
+            background-color:#0097ff;
+        }
+        .header>a{
+            position: absolute;
+            left: 1rem;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.8rem;
+        }
+        .main{
+            padding: 1rem;
+        }
+        label{
+            font-size: 1.6rem;
+            color: #444;
+        }
+        input{
+            margin:1rem 0;
+            font-size: 1.5rem;
+            border:none;
+            outline: none;
+        }
+       
+        .denglu{
+            width: 100%;
+            height: 3.5rem;
+            margin-top: 1rem;
+            border:none;
+            border-radius: 0.4rem;
+            background-color: #38ca73;
+            color: #fff;
+        }
+        .zhuce{
+            display: block;
+            background-color: #eeeeee;
+            box-sizing: border-box;
+            padding-top: 0.8rem;
+            text-align: center;
+            margin-top: 1.5rem;
+            width: 100%;
+            color: #333;
+            text-decoration: none;
+            height: 3.5rem;
+            margin-top: 1rem;
+            border:none;
+            border-radius: 0.4rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="login">
+        <div class="header">
+            <a href="./user.html"> < </a>
+            <p>用户登录</p>
+        </div>
+        <div class="main">
+            <form action="">
+                <label for="">手机号码：</label> <input class="tel" type="text" placeholder="手机号码"><br>
+                <label for="">密码：</label> <input class="pwd" type="text" placeholder="密码">
+            </form>
+            
+            <button class="denglu">登录</button>
+            <a href="./register.html" class="zhuce"> 去注册</a>
+        </div>
+       
+    </div>
+    <script src="./lib/jquery-2.0.0.min.js"></script>
+    <script>
+        $(".denglu").click(function(){
+            var tel = localStorage.getItem("tel");
+            var pwd = localStorage.getItem("password");
+            console.log(tel);
+            console.log(pwd);
+            if($(".tel").val()==tel && $(".pwd").val()==pwd){
+                alert("恭喜你登录成功！")
+                alert("恭喜你登录成功！")
+                localStorage.setItem("loginFlag", true);
+
+            }else{
+                alert("输入错误请重新输入！")
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+{
+    "sp":[
+        {
+            "hashId": "bcc5fdc2fb6efc6db33fa242474f108a",
+            "src1":"./img/sj02.png",
+            "title":"书亦烧仙草(桂林万达店)",
+            "pingjia":"4.4",
+            "yueshou":"1123",
+            "juli":"22.1",
+            "shijian":"80",
+            "leixing":"奶茶果汁",
+            "biaoqian1":"满18元，满28元减2元",
+            "biaoqian2":"配送费立减2.7元",
+            "title1":"1111111111111"
+            
+            
+            
+
+        },
+        {
+            "hashId": "bcc5fbbbbbb6efc6db33fa242474f108a",
+            "src1":"./img/sj02.png",
+            "title":"小锅饭豆腐馆（全运店）",
+            "pingjia":"4.6",
+            "yueshou":"1166",
+            "juli":"8.1",
+            "shijian":"79",
+            "leixing":"各种饺子",
+            "biaoqian1":"饿了么新用户首单立减9元",
+            "biaoqian2":"特价商品5元起"
+           
+
+        },
+        {
+            "hashId": "bcc5fdc2fb6efc6db33fa2424733ss",
+            "src1":"./img/sj02.png",
+            "title":"麦当劳全乐送（全运路店）",
+            "pingjia":"4.8",
+            "yueshou":"3324",
+            "juli":"7",
+            "shijian":"40",
+            "leixing":"各种饺子",
+            "biaoqian1":"饿了么新用户首单立减9元",
+            "biaoqian2":"特价商品5元起"
+
+        },
+        {
+            "hashId": "bceeec2fb6efc6db33fa242474f108a",
+            "src1":"./img/sj04.png",
+            "title":"米村拌饭（浑南店）",
+            "pingjia":"4.9",
+            "yueshou":"1154",
+            "juli":"6",
+            "shijian":"30",
+            "leixing":"各种饺子",
+            "biaoqian1":"饿了么新用户首单立减9元",
+            "biaoqian2":"特价商品5元起"
+
+        },
+        {
+            "hashId": "bcc5fdc2fb663y8g5r5db33fa242474f108a",
+            "src1":"./img/sj05.png",
+            "title":"申记串道（中海康城店）",
+            "pingjia":"4.9",
+            "yueshou":"887",
+            "juli":"4",
+            "shijian":"20",
+            "leixing":"各种饺子",
+            "biaoqian1":"饿了么新用户首单立减9元",
+            "biaoqian2":"特价商品5元起"
+
+        }
+    ]
+   
+}

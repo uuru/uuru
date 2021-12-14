@@ -1,0 +1,169 @@
+{
+    "label":[
+        {
+           
+            "src1":"./img/dcfl01.png",
+            "p1":"美食",
+            "src2":"./img/dcfl02.png",
+            "p2":"早餐"
+        }, {
+           
+            "src1":"./img/dcfl03.png",
+            "p1":"跑腿代购",
+            "src2":"./img/dcfl04.png",
+            "p2":"汉堡披萨"
+        }, {
+            
+            "src1":"./img/dcfl05.png",
+            "p1":"甜品饮品",
+            "src2":"./img/dcfl06.png",
+            "p2":"美食简餐"
+        }, {
+            
+            "src1":"./img/dcfl07.png",
+            "p1":"地方小吃",
+            "src2":"./img/dcfl08.png",
+            "p2":"米粉面馆"
+        }, {
+            "src1":"./img/dcfl09.png",
+            "p1":"早餐",
+            "src2":"./img/dcfl10.png",
+            "p2":"炸鸡炸串"
+        }
+    ],
+    "sp":[
+        {
+            "hashId": "bcc5fdc2fb6efc6db33fa242474f108a",
+            "src1":"./img/sj01.png",
+            "title":"万家饺子（软件园E18店）",
+            "pingjia":"4.4",
+            "yueshou":"1123",
+            "juli":"22.1",
+            "shijian":"80",
+            "leixing":"奶茶果汁",
+            "biaoqian1":"满18元，满28元减2元",
+            "biaoqian2":"配送费立减2.7元"
+
+        },
+        {
+            "hashId": "bcc5fbbbbbb6efc6db33fa242474f108a",
+            "src1":"./img/sj02.png",
+            "title":"小锅饭豆腐馆（全运店）",
+            "pingjia":"4.6",
+            "yueshou":"1166",
+            "juli":"8.1",
+            "shijian":"79",
+            "leixing":"各种饺子",
+            "biaoqian1":"饿了么新用户首单立减9元",
+            "biaoqian2":"特价商品5元起"
+
+        },
+        {
+            "hashId": "bcc5fdc2fb6efc6db33fa2424733ss",
+            "src1":"./img/sj03.png",
+            "title":"麦当劳全乐送（全运路店）",
+            "pingjia":"4.8",
+            "yueshou":"3324",
+            "juli":"7",
+            "shijian":"40",
+            "leixing":"各种饺子",
+            "biaoqian1":"饿了么新用户首单立减9元",
+            "biaoqian2":"特价商品5元起"
+
+        },
+        {
+            "hashId": "bceeec2fb6efc6db33fa242474f108a",
+            "src1":"./img/sj04.png",
+            "title":"米村拌饭（浑南店）",
+            "pingjia":"4.9",
+            "yueshou":"1154",
+            "juli":"6",
+            "shijian":"30",
+            "leixing":"各种饺子",
+            "biaoqian1":"饿了么新用户首单立减9元",
+            "biaoqian2":"特价商品5元起"
+
+        },
+        {
+            "hashId": "bcc5fdc2fb663y8g5r5db33fa242474f108a",
+            "src1":"./img/sj05.png",
+            "title":"申记串道（中海康城店）",
+            "pingjia":"4.9",
+            "yueshou":"887",
+            "juli":"4",
+            "shijian":"20",
+            "leixing":"各种饺子",
+            "biaoqian1":"饿了么新用户首单立减9元",
+            "biaoqian2":"特价商品5元起"
+
+        }
+    ],
+    "Shaixuan":[
+        {
+            "one":"商家服务",
+            "two":"",
+            "three":""
+        },
+        {
+            "one":"蓝骑士专送",
+            "two":"到店自取",
+            "three":"品牌商家"
+        },
+        {
+            "one":"新店",
+            "two":"接受预定",
+            "three":"食无忧"
+        },{
+            "one":"开发票",
+            "two":"",
+            "three":""
+        },{
+            "one":"优惠活动（单选）",
+            "two":"",
+            "three":""
+        },{
+            "one":"百亿补贴",
+            "two":"首次光顾立减",
+            "three":"满减优惠"
+        },{
+            "one":"下单返红包",
+            "two":"配送费优惠",
+            "three":"赠品优惠"
+        },{
+            "one":"特价商品",
+            "two":"店铺红包",
+            "three":"吃货联盟"
+        },{
+            "one":"人均消费",
+            "two":"",
+            "three":""
+        },{
+            "one":"￥20以下",
+            "two":"￥20-￥30",
+            "three":"￥40-￥60"
+        },{
+            "one":"￥60-￥80",
+            "two":"￥80-￥100",
+            "three":"￥100以上"
+        }
+    ],
+    "paixu":[
+        {
+            "text":"综合排序"
+        },{
+            "text":"好评优先"
+        },{
+            "text":"起送价最低"
+        },{
+            "text":"配送最快"
+        },{
+            "text":"配送费最低"
+        },{
+            "text":"人均从低到高"
+        },{
+            "text":"人均从高到低"
+        },{
+            "text":"通用排序"
+        }
+    ]
+}
